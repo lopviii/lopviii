@@ -2,6 +2,7 @@ queueteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus 
 if not game:IsLoaded() then
 game.Loaded:Wait()
 end
+task.wait(1)
 queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/lopviii/lopviii/refs/heads/main/thosewhoknow.lua'))()")
 spawn(function()
 
