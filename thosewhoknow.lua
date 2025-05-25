@@ -1,10 +1,10 @@
+queueteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
+
 spawn(function()
 if not game:IsLoaded() then
 game.Loaded:Wait()
 end
-
-    print("hi")
-
+print("hi")
 for i,v in pairs(workspace.Items.Main:GetChildren()) do
 if v then
 task.wait(1)
@@ -86,6 +86,7 @@ end
 
 -- If you'd like to use a script before server hopping (Like a Automatic Chest collector you can put the Teleport() after it collected everything.
 Teleport()
-
+queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/lopviii/lopviii/refs/heads/main/thosewhoknow.lua"))()')
 end)
+
 
