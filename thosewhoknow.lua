@@ -3,6 +3,8 @@ if not game:IsLoaded() then
 game.Loaded:Wait()
 end
 
+    print("hi")
+
 for i,v in pairs(workspace.Items.Main:GetChildren()) do
 if v then
 task.wait(1)
